@@ -1,0 +1,2 @@
+--我们只能为tables设置metatables
+--
