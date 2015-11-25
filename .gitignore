@@ -39,3 +39,8 @@ luac.out
 *.x86_64
 *.hex
 
+#lua source files
+src/luasrc
+
+#shell scripts
+*.sh
