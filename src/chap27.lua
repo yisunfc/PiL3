@@ -12,3 +12,15 @@
 --27.3 C Modules
 --luaL_newlib宏接受一个不同名字的C函数列表然后将其他们一起注册在一个新表中
 --注册C函数到lua中时,可以定义一个luaL_Reg类型的数组,然后将{函数名,函数指针}的数据填入数组
+--
+
+--A sample to use C module "mylib"
+--Two steps need to do:
+--First,compile :gcc -fPIC -shared chap27.c -o mylib.so
+--Second, run: lua chap27.lua
+
+local t = require("mylib")
+local d = t.dir(".")
+for _,v in ipairs(d) do
+	print(v)
+end

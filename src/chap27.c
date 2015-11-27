@@ -11,7 +11,6 @@ static int l_dir(lua_State* L)
 	struct dirent *entry;
 	int i;
 	const char *path = luaL_checkstring(L, 1);
-	printf("%s",path);
 
 	dir = opendir(path);
 	if (!dir)
