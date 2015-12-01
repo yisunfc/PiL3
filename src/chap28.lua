@@ -40,3 +40,14 @@
 
 
 --lua_pushcclosure可以用来创建c的闭包
+
+--Exercise 28.1
+local lib = require("mylib")
+local t = {1,3.2,30, -4,3.13}
+function pred(x)
+	return x < 3.14
+end
+local u = lib.filter(t,pred)
+for k,v in ipairs(u) do
+	print(v)
+end
