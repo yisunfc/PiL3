@@ -1,0 +1,3 @@
+--32.1 The Allocation Function
+--lua_newstate函数接受2个参数,内存分配函数和一个userdata
+--32.2 The Garbage Collector
