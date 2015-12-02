@@ -41,6 +41,3 @@ luac.out
 
 #lua source files
 src/luasrc
-
-#shell scripts
-*.sh
